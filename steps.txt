@@ -1,0 +1,18 @@
+python -m venv .venv
+    # для создания вирт. среды в Pycharm выбери ПИТОНа в interpreter settings
+
+.\\.venv\Scripts\activate
+deactivate
+python -m pip install --upgrade pip
+pip install Django~=4.1.0
+
+    Она создаст проект Django с именем UrbanDjango.
+django-admin startproject UrbanDjango
+
+cd  UrbanDjango
+
+    Создание приложения
+python manage.py startapp example1
+
+python manage.py runserver
+
