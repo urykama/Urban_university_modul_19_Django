@@ -12,7 +12,9 @@ django-admin startproject UrbanDjango
 cd  UrbanDjango
 
     Создание приложения
-python manage.py startapp example1
+python manage.py startapp task1
 
 python manage.py runserver
 
+python manage.py makemigrations task1
+python manage.py migrate
