@@ -1,0 +1,6 @@
+{% extends "menu.html" %}
+{% block content %}
+    {% for game in carts %}
+        <p>{{ game }}   <button>Отменить</button></p>
+    {% endfor %}
+{% endblock %}

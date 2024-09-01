@@ -1,0 +1,8 @@
+{% extends "menu.html" %}
+{% block content %}
+    <ul>
+        {% for release in releases %}
+            <li>{{ release.title }}   <button>Купить</button></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

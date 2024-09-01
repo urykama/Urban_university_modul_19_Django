@@ -19,3 +19,14 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+from django.contrib import admin
+from django.urls import path, include
+# from UrbanDjango.task1.views import *
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    # path('2', include('task2.urls', namespace='task2')),
+    # path('3', include('task3.urls', namespace='task3')),
+    # path('4', include('task4.urls', namespace='task4')),
+    path('', include('task1.urls', namespace='task1')),
+]
